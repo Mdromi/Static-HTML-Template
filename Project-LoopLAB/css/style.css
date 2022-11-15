@@ -1,0 +1,82 @@
+/* 
+x-sm=0-575
+sm=576-767
+md=768-991
+lg=992-anyLarge
+
+*/
+
+body{
+	background:#333;
+	color:#fff;
+}
+ /*NavBar*/
+ 
+.navbar{
+	border-bottom:3px solid #008ed6;
+	background:#292b2c;
+	opacity:0.7;
+	
+	
+}
+/*HedarSection*/
+#home-section{
+	background:url(../img/home.jpg) no-repeat center top;
+	background-size:cover;
+	min-height:700px;
+	background-attachment:fixed;
+ }
+ .dark-overlay{
+		background:rgba(0,0,0,0.7);
+		min-height:700px;
+}
+#home-section .fa{
+	background:#fff;
+	color:#007bff;
+	padding:4px;
+	font-size:30px;
+	border-radius:5px;
+	
+}
+.home-inner{
+	padding-top:150px;
+	padding-bottom:50px;
+}
+ 
+
+
+/*Card_Form*/
+.card-form{
+	opacity:0.8;
+}
+
+/*Explore Section*/
+
+.icon .fa{
+	background:#333;
+	color:#fff;
+	padding:4px;
+	font-size:30px;
+	border-radius:5px;
+}
+/*crate Section*/
+
+.crate-icon .fa{
+	background:#fff;
+	color:#007bff;
+	padding:4px;
+	font-size:30px;
+	border-radius:5px;
+}
+
+
+
+
+
+
+/*HedarSection*/
+@media(max-width:767px){
+	#home-section h1{
+		font-size:37px;
+	}
+}

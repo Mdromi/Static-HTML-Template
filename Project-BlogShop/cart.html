@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Glidejs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css">
+
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="style.css">
+    <title>MD Romi - Ecommerce Website-Cart</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="wrapper container">
+            <div class="logo"><a href="index.html">BLOGSHOP</a></div>
+            <ul class="nav_list">
+                <div class="top">
+                    <label for="" class="btn close-btn">
+                        <i class="fas fa-times"></i>
+                    </label>
+                </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Product</a></li>
+                <li>
+                    <a href="#" class="desktop_item">Shop
+                        <span><i class="fas fa-chevron-down"></i></span>
+                    </a>
+                    <input type="checkbox" id="showMega">
+                    <label for="showMega" class="mobile_item">
+                        Shop<span><i class="fas fa-chevron-down"></i></span>
+                    </label>
+                    <div class="mega_box">
+                        <div class="content">
+                            <div class="row">
+                                <img src="./images/woman.jpg" alt="">
+                            </div>
+                            <div class="row">
+                                <header>Shop Layout</header>
+                                <ul class="mega_links">
+                                    <li><a href="#">Shop With Background</a></li>
+                                    <li><a href="#">Shop Mini Categories</a></li>
+                                    <li><a href="#">Shop Only Categories</a></li>
+                                    <li><a href="#">Shop Icon Categories</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>Filter Layout</header>
+                                <ul class="mega_links">
+                                    <li><a href="#">Sidebar</a></li>
+                                    <li><a href="#">Filter Default</a></li>
+                                    <li><a href="#">Filter Drawer</a></li>
+                                    <li><a href="#">Filter Dropdown</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>Product Layout</header>
+                                <ul class="mega_links">
+                                    <li><a href="#">Layout Zoom</a></li>
+                                    <li><a href="#">Layout Scroll</a></li>
+                                    <li><a href="#">Layout Sticky</a></li>
+                                    <li><a href="#">Layout Sticky 2</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li>
+                    <a href="#" class="desktop_item">Vendors 
+                        <span><i class="fas fa-chevron-down"></i></span>
+                    </a>
+                    <input type="checkbox" id="showdrop1">
+                    <label for="showdrop1" class="mobile_item">
+                        Vendors<span><i class="fas fa-chevron-down"></i></span>
+                    </label>
+                    <ul class="drop_menu1">
+                        <li><a href="#">Vendor Store Listings</a></li>
+                        <li><a href="#">Store Details </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="desktop_item">Page
+                        <span><i class="fas fa-chevron-down"></i></span>
+                    </a>
+                    <input type="checkbox" id="showdrop2">
+                    <label for="showdrop2" class="mobile_item">
+                        Page<span><i class="fas fa-chevron-down"></i></span>
+                    </label>
+                    <ul class="drop_menu2">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Faq</a></li>
+                        <li><a href="#">Page 404</a></li>
+                    </ul>
+                </li>
+                <li class="icons">
+                    <span>
+                        <img src="./images/shoppingBag.svg" alt="">
+                        <small class="count d-flex">0</small>
+                    </span>
+                    <span>
+                        <img src="./images/search.svg" alt="">
+                    </span>
+                </li>
+            </ul>
+            <label for="" class="btn open_btn"><i class="fas fa-bars"></i></label>
+        </div>
+    </nav>
+    <!--Cart Start-->
+    <div class="container cart">
+      <table>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart_info">
+              <img src="./images/product1.jpg" alt="">
+              <div>
+                <p>Bambi Print Mini Backpack</p>
+                <span>Price: $500.00</span>
+                <br>
+                <a href="#">remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" min="1"></td>
+          <td>$500.00</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="cart_info">
+              <img src="./images/product2.jpg" alt="">
+              <div>
+                <p>Bambi Print Mini Backpack</p>
+                <span>Price: $150.00</span>
+                <br>
+                <a href="#">remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" min="1"></td>
+          <td>$150.00</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="cart_info">
+              <img src="./images/product3.jpg" alt="">
+              <div>
+                <p>Bambi Print Mini Backpack</p>
+                <span>Price: $55.5</span>
+                <br>
+                <a href="#">remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" min="1"></td>
+          <td>$55.5</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="cart_info">
+              <img src="./images/product4.jpg" alt="">
+              <div>
+                <p>Bambi Print Mini Backpack</p>
+                <span>Price: $120.00</span>
+                <br>
+                <a href="#">remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" min="1"></td>
+          <td>$120.00</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="cart_info">
+              <img src="./images/product5.jpg" alt="">
+              <div>
+                <p>Bambi Print Mini Backpack</p>
+                <span>Price: $78.15</span>
+                <br>
+                <a href="#">remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" min="1"></td>
+          <td>$78.15</td>
+        </tr>
+      </table>
+      <div class="total_price">
+        <table>
+          <tr>
+            <td>Subtotal</td>
+            <td>$120</td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td>$50</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>$250</td>
+          </tr>
+        </table>
+        <a href="#" class="checkout btn">Proceed To Checkout</a>
+      </div>
+    </div>
+    <!--Cart End-->
+  <!-- Footer -->
+  <footer id="footer" class="section footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-center">
+          <h3>EXTRAS</h3>
+          <a href="#">Brands</a>
+          <a href="#">Gift Certificates</a>
+          <a href="#">Affiliate</a>
+          <a href="#">Specials</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-center">
+          <h3>INFORMATION</h3>
+          <a href="#">About Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-center">
+          <h3>MY ACCOUNT</h3>
+          <a href="#">My Account</a>
+          <a href="#">Order History</a>
+          <a href="#">Wish List</a>
+          <a href="#">Newsletter</a>
+          <a href="#">Returns</a>
+        </div>
+        <div class="footer-center">
+          <h3>CONTACT US</h3>
+          <div>
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            42 Dream House, Dreammy street, 7131 Dreamville, USA
+          </div>
+          <div>
+            <span>
+              <i class="far fa-envelope"></i>
+            </span>
+            company@gmail.com
+          </div>
+          <div>
+            <span>
+              <i class="fas fa-phone"></i>
+            </span>
+            456-456-4512
+          </div>
+          <div class="payment-methods">
+            <img src="./images/payment.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+
+
+
+    <!-- Glidejs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+    <!-- Gsap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
+    <!-- Custom Script-->
+    <script src="./js/slide.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

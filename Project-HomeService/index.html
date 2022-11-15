@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<!-- Tutorial By- ABDUL KADER- IT-BARI.com -->
+		<meta charset="UTF-8">
+		 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<title>Home Service landing page</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&amp;display=swap" rel="stylesheet">
+
+		<!-- Calling Favicon -->
+		<link rel="icon" href="img/favicon.png" type="image/png" />
+		<link rel="shortcut icon" href="img/favicon.ico" />	
+
+		<link rel="stylesheet" href="style.css" />
+
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="left-col">
+				<img src="img/logo.png" alt="" class="logo">
+				
+				<div class="content">
+					<h1 class=""> Add plants to your living space </h1>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit earum dolorem.</p>
+					<button type="button">LEARN MORE</button>
+				</div>
+			</div>
+			<div class="right-col">
+				<div class="slider">
+					<img src="img/pic-1.jpg" alt="" id="slide">
+				</div>
+				<div class="slider-content">
+					<h2>Where can I find ideas for small rooms?</h2>
+					<hr>
+					<p>They can absorb pollutants and remove harmful gases from the air.No home <br> should be without these wonderful greens!cDesgining small rooms comes with a <br> completely different challenge.</p>
+					<div class="controller">
+						<img src="img/back.png" alt="" id="backBtn">
+						<div class="vertical-line"></div>
+						<img src="img/next.png" alt="" id="nextBtn">
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			var slide = document.getElementById("slide")
+			var backBtn = document.getElementById("backBtn")
+			var nextBtn = document.getElementById("nextBtn")
+			
+			var slideimages = new Array(
+				"img/pic-1.jpg",
+				"img/pic-2.jpg",
+				"img/pic-3.jpg",
+				"img/pic-4.jpg",
+			);
+			let i = 0;
+			nextBtn.onclick = function(){
+				if(i< 3){
+				 slide.src = slideimages[i+1];
+					i++;
+				}
+			}
+			backBtn.onclick = function(){
+				if(i > 0){
+				 slide.src = slideimages[i-1];
+					i--;
+				}
+			}
+		</script>
+	</body>
+</html>
